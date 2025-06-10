@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo img {
+        width: 5rem;
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    main {
+        margin: 2rem 0;
+    }
+
+    #options {
+        display: flex;
+        width: 0;
+    }
+
+    .btn-option {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    table tbody tr td {
+        display: flex;
+        justify-content: space-between;
+        border: 0.5rem solid #FFFFFF;
+        padding: 0rem 0;
+    }
+
+    table tbody tr td::before {
+        content: attr(data-label);
+        font-weight: bold;
+    }
+
+    footer h2, .chat-box, .chat-input {
+        display: none;
+    }
+
+    #btn-image-new {
+        bottom: 0;
+        right: 15rem;
+        margin: 2.5rem;
+        width: 4rem;
+        position: fixed;
+    }
+
+    #btn-image-remove {
+        bottom: 0;
+        right: 10rem;
+        margin: 2.5rem;
+        width: 3.5rem;
+        position: fixed;
+    }
+
+    #btn-image-export {
+        bottom: 0;
+        right: 5rem;
+        margin: 2.5rem;
+        width: 4rem;
+        position: fixed;
+    }
+
+    #btn-image-help {
+        bottom: 0;
+        right: 0;
+        margin: 2.5rem;
+        width: 4rem;
+        position: fixed;
+    }
+
+    .chat-box, .chat-input {
+        width: 100%;
+        display: none;
+    }
+
+    #chat-message {
+        width: 100%;
+        display: none;
+    }
+
+    .status {
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .name {
+        background-image: url("../images/name.svg");
+        background-repeat: no-repeat;
+    }
+
+    .storage {
+        background-image: url("../images/storage.svg");
+        background-repeat: no-repeat;
+    }
+
+    .cpu {
+        background-image: url("../images/cpu.svg");
+        background-repeat: no-repeat;
+    }
+
+    .ram {
+        background-image: url("../images/ram.svg");
+        background-repeat: no-repeat;
+    }
+
+    .os {
+        background-image: url("../images/os.svg");
+        background-repeat: no-repeat;
+    }
+}

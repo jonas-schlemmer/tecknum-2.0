@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tecknum</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-mobile.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body>
+   <main>
+        <a href="index.html">
+            <div id="logo">
+                <img src="images/logo.png" alt="tecknum logo">
+                <p>tecknum</p>
+            </div>
+        </a>
+
+        <form action="pages/computers.html" method="GET">
+            <label for="name">Usuário</label><br>
+            <input type="text" id="name" name="name" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="#" id="forgotPass">Esqueci minha senha</a>
+            
+            <div id="keepMeOn">
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox">Mantenha-me logado</label>
+            </div>
+
+            <input type="submit" value="Acessar">
+        </form>
+
+        <p id="no-account">Não possui uma conta?
+            <a href="pages/register.html">
+                <b>Cadastre-se</b>
+            </a>
+        </p>
+   </main>
+</body>
+</html>

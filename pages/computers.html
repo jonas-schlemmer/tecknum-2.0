@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tecknum | Computadores </title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/computers.css">
+    <link rel="stylesheet" href="../css/computers-mobile.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logo.png" alt="tecknum logo">
+            <p>Lista de Computadores</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Conta</a></li>
+                <li><a href="#">Financeiro</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="../index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="options">
+            <div>
+                <img id="btn-image-new" src="../images/add.png" alt="newPC">
+                <button class="btn-option">
+                    Novo
+                </button>
+            </div>
+
+            <div>
+                <img id="btn-image-remove" src="../images/remove.png" alt="removePC">
+                <button class="btn-option">
+                    Remover
+                </button>
+            </div>
+
+            <div>
+                <img id="btn-image-export" src="../images/export.png" alt="export">
+                <button class="btn-option">
+                    Exportar
+                </button>
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Nome</th>
+                    <th>Espaço Livre / Total</th>
+                    <th>CPU</th>
+                    <th>RAM</th>
+                    <th>Sistema</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="status" style="background-color: lightgreen;">LIGADA</td>
+                    <td class="name">vmw-prd-ad-01</td>
+                    <td class="storage">122 / 1024GB (SSD)</td>
+                    <td class="cpu">i9 9900K</td>
+                    <td class="ram">64</td>
+                    <td class="os">Windows Server 2019</td>
+                </tr>
+                <tr>
+                    <td class="status" style="background-color: rgb(250, 250, 96);">UPDATE</td>
+                    <td class="name">TECKNUM-001</td>
+                    <td class="storage">234 / 256GB (SSD)</td>
+                    <td class="cpu">i5 12500</td>
+                    <td class="ram">16</td>
+                    <td class="os">Windows 11 23H3</td>
+                </tr>
+                <tr>
+                    <td class="status" style="background-color: lightgreen;">LIGADA</td>
+                    <td class="name">vmw-prd-ser-01</td>
+                    <td class="storage">30 / 2056GB (HDD)</td>
+                    <td class="cpu">i9 14900K</td>
+                    <td class="ram">128</td>
+                    <td class="os">Ubuntu 22.04</td>
+                </tr>
+                <tr>
+                    <td class="status" style="background-color: rgb(247, 110, 110);">DESLIGADA</td>
+                    <td class="name">TESTE_USER</td>
+                    <td class="storage">10 / 20 GB (HDD)</td>
+                    <td class="cpu">i3 8700</td>
+                    <td class="ram">8</td>
+                    <td class="os">Windows 10 22H2</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div id="chat-container">
+            <img id="btn-image-help" src="../images/help.png" alt="export">
+            <h2>Dúvidas? Acione nosso suporte 24 horas aqui!</h2>
+            <div class="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="chat-message" placeholder="Digite sua mensagem...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

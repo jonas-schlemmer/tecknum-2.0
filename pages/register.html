@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tecknum | Cadastro </title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/register-mobile.css">
+    <link rel="shortcut icon" href="../images/favicon.png">
+</head>
+<body>
+    <main>
+        <a href="../index.html">
+            <div id="logo">
+                <img src="../images/logo.png" alt="tecknum logo">
+                <p>tecknum</p>
+            </div>
+        </a>
+
+        <form action="../index.html" method="GET">
+            <div class="field">
+                <div>
+                    <label for="register-name">Nome completo</label><br>
+                    <input type="text" id="register-name" name="register-name" required>
+                </div>
+                <div>
+                    <label for="username">Usuário</label><br>
+                    <input type="text" id="username" name="username" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <div>
+                    <label for="register-password">Digite uma senha</label><br>
+                    <input type="password" id="register-password" name="register-password" required>
+                </div>
+                <div>
+                    <label for="register-confirm-password">Confirme a senha</label><br>
+                    <input type="password" id="register-confirm-password" name="register-confirm-password" required>
+                </div>
+            </div>
+
+            <div class="agree">
+                <input type="checkbox" id="checkbox" name="checkbox" required>
+                <label for="checkbox">Concordo com os <b><a href="#">Termos de Uso do Usuário Final</a></b></label>
+            </div>
+        
+            <input type="submit" value="Registrar">
+        
+            <p class="no-account">Já possui uma conta?
+                <a href="../index.html">
+                    <b>Fazer login</b>
+                </a>
+            </p>
+        </form>
+   </main>
+</body>
+</html>

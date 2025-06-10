@@ -1,0 +1,168 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    align-items: center;
+}
+
+#logo img {
+    height: 4rem;
+}
+
+#logo p {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#options {
+    width: 20%;
+    margin-top: 1rem;
+}
+
+#options > div > button {
+    background-color: #205B99;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    color: #FFFFFF;
+    width: 90%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+#btn-image-new {
+    margin-bottom: -3.8rem;
+    margin-left: -0.6rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+#btn-image-remove {
+    margin-bottom: -3.75rem;
+    margin-left: -0.4rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+#btn-image-export {
+    margin-bottom: -3.75rem;
+    margin-left: -1rem;
+    width: 4.2rem;
+    cursor: pointer;
+}
+
+#btn-image-help {
+    margin: 0 25rem -2.7rem 0;
+    width: 3rem;
+    cursor: pointer;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 2rem;
+}
+
+th, td {
+    padding: 1rem;
+    border: 1px solid #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+th {
+    background-color: #205B99;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+tr:hover {
+    background-color: #CCCCCC;
+}
+
+.btn-option {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#chat-button {
+    background-color: #205B99;
+    cursor: pointer;
+}
+
+#chat-container {
+    width: 25rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.8rem 0 0 0;
+}
+
+#chat-container img {
+    z-index: 1;
+}
+
+#chat-container h2 {
+    font-size: 0.9rem;
+    text-align: center;
+    width: 375px;
+    background-color: #205B99;
+    padding: 1rem 2.3rem;
+    color: #FFFFFF;
+    margin: -0.3rem;
+    border-radius: 1.8rem 0 0 1.8rem;
+}
+
+.chat-box {
+    height: 4rem;
+}
+
+.chat-input {
+    display: flex;
+    width: 100%;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    border: 1px solid #CCCCCC;
+    text-indent: 1rem;
+}
+
+.chat-input button {
+    padding: 0.5rem 1rem;
+    background-color: #205B99;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
