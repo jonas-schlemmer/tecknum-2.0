@@ -33,3 +33,7 @@ a:active {
 .no-account {
     margin: 1rem;
 }
+
+input {
+    border-radius: 20px;
+}
