@@ -395,7 +395,7 @@ td:last-child {
     width: 30rem; /* ou ajuste para o tamanho que preferir */
     font-family: 'Rubik', sans-serif; /* mesma fonte do index */
     font-size: 1rem;
-    margin-right: 9rem;
+    margin-right: 10rem;
     text-align: center;
     transition: all 0.3s ease;
 }
