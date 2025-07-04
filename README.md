@@ -9,3 +9,4 @@
 - Favoritar filme;
 - Uso de transition para fluidez visual;
 - Limitar para 16 caracteres o usuário;
+- Exportar tabela para CSV;
