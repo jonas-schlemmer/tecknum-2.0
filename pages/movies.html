@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/movies-mobile.css">
     <link rel="shortcut icon" href="../images/favicon.png">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="../scripts/movies.js"></script>
 </head>
 <body>
     <header>
@@ -22,10 +23,11 @@
                 <li class="search-bar">
                     <input type="text" id="campoBusca" placeholder="Pesquisar"/>
                 </li>
-                <li><a href="#">Lançamentos</a></li>
+                <!-- <li><a href="#">Lançamentos</a></li>
                 <li><a href="#">Em alta</a></li>
                 <li><a href="#">Categorias</a></li>
-                <li><a href="#">Conta</a></li>
+                <li><a href="#">Conta</a></li> -->
+                <li id="usuarioLogado"></li>  <!-- lugar pro nome aparecer -->
                 <li><a href="../index.html">Sair</a></li>
             </ul>
         </nav>
@@ -34,7 +36,7 @@
     <main>
         <section>
             <table>
-                <thead>
+                <thead id="barra-thead">
                     <tr>
                         <th>TÍTULO</th>
                         <th>DESCRIÇÃO</th>
@@ -90,9 +92,13 @@
                         <td>178 min</td>
                         <td>9.3</td>
                         <td class="btn-option">
-                            <button class="btn-edit" title="Editar">
+                            <!-- <button class="btn-edit" title="Editar">
                                 <i class="em em-pencil2" aria-role="presentation" aria-label="BIRD" style="transform: scaleX(-1);"></i>
+                            </button> -->
+                            <button class="btn-edit" title="Editar" data-index="0"> <!-- índice será ajustado no JS -->
+                                <i class="em em-pencil2" aria-role="presentation" style="transform: scaleX(-1);"></i>
                             </button>
+
                             <button class="btn-delete" title="Apagar">
                                 <i class="em em-x" aria-role="presentation" aria-label="BIRD" style="transform: scaleX(-1);"></i>
                             </button>
@@ -103,5 +109,26 @@
         </section>
     </main>
     <button id="botao-fixo">+</button>
+    <!-- Modal de novo item -->
+    <div id="modal-novo-item" class="modal">
+        <div class="modal-conteudo">
+            <h2 id="modalTitulo">Novo Filme</h2>
+
+            <form id="formNovoFilme">
+                <input type="text" name="titulo" placeholder="Título" required />
+                <input type="text" name="descricao" placeholder="Descrição" required />
+                <input type="text" name="diretor" placeholder="Diretor" required />
+                <input type="text" name="genero" placeholder="Gênero" required />
+                <input type="number" name="ano" placeholder="Ano" required />
+                <input type="text" name="duracao" placeholder="Duração (ex: 120 min)" required />
+                <input type="number" name="nota" placeholder="Nota (ex: 8.5)" step="0.1" min="0" max="10" required />
+                <div class="modal-botoes">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancelarModal">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
