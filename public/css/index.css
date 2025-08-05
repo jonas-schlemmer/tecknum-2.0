@@ -1,0 +1,57 @@
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    background-color: #FFFFFF;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    background-color: #CCCCCC;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 2px solid #000000;
+}
+
+#forgotPass {
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+}
+
+#keepMeOn {
+    gap: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+}
+
+form input[type="submit"] {
+    background-color: #205B99;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
